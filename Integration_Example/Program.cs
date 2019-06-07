@@ -84,7 +84,7 @@ namespace Integration_Example
             {
                 if (_uniq == null)
                 {
-                    _uniq = ((int)(DateTime.Now - DateTime.Now.Date).TotalSeconds).ToString();
+                    _uniq = ((uint)(DateTime.Now - DateTime.MinValue).TotalSeconds).ToString();
                 }
 
                 return _uniq;
